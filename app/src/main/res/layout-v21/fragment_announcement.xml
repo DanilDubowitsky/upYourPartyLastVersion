@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+
+    android:id="@+id/scrollViewAnnounce"
+    android:isScrollContainer="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_card_new">
+
+        <TextView
+            android:id="@+id/categoryAnnounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/nunito"
+            android:text="Категория: "
+            android:textColor="#B21B2474"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/titleAnnounce"
+            style="@style/nameText_style"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito"
+            android:text="Название"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryAnnounce" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_images"
+            android:layout_width="118dp"
+            android:layout_height="158dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toEndOf="@+id/titleAnnounce"
+            app:layout_constraintTop_toBottomOf="@+id/titleAnnounce" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/luja_bolshe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toEndOf="@+id/titleAnnounce"
+            app:layout_constraintTop_toBottomOf="@+id/pager_images" />
+
+        <TextView
+            android:id="@+id/descriptionAnnounce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/nunito"
+            android:text="Описание"
+            android:textColor="#CC1B2474"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pager_images" />
+
+        <TextView
+            android:id="@+id/phoneAnnounce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/nunito"
+            android:text="Телефон:"
+            android:textColor="#CC1B2474"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cityAnnounce"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionAnnounce" />
+
+        <TextView
+            android:id="@+id/cityAnnounce"
+            style="@style/styleAddannounceText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/nunito"
+            android:text="Город: "
+            android:textColor="#CC1B2474"
+            app:layout_constraintEnd_toStartOf="@+id/phoneAnnounce"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionAnnounce" />
+
+
+        <TextView
+            android:id="@+id/priceAnnounce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/nunito"
+            android:text="Цена"
+            android:textColor="#1B2474"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textToSaler"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:numStars="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cityAnnounce" />
+
+        <TextView
+            android:id="@+id/reviews"
+            style="@style/nameText_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito"
+            android:text="Отзывы"
+            app:layout_constraintStart_toEndOf="@+id/graduate"
+            app:layout_constraintTop_toBottomOf="@+id/cityAnnounce" />
+
+        <TextView
+            android:id="@+id/graduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+
+            android:text="4,0"
+            android:textColor="#B2000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/cityAnnounce" />
+
+        <ImageView
+            android:id="@+id/setToFavImg"
+            android:layout_width="31dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/heart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cityAnnounce" />
+
+        <TextView
+            android:id="@+id/textToSaler"
+            style="@style/nameText_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="@font/nunito"
+            android:text="Задать вопрос продавцу"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</RelativeLayout>

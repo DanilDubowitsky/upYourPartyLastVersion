@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E74155</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#E74155</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="title_color">#092271</color>
+    <color name="arrow_color">#4749A0</color>
+    <color name="fab_color">#E74155</color>
+    <color name="card_color">#FAFAFA</color>
+    <color name="color_menu_items">#8A092271</color>
+
+</resources>

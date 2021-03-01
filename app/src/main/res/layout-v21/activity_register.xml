@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Views.Register.RegisterActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/nameText_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="91dp"
+        android:text="РЕГИСТРАЦИЯ"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_style"
+        android:hint="Введите почту"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:paddingLeft="20dp"
+        android:textColorHint="#99000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_phone" />
+
+    <EditText
+        android:id="@+id/text_phone"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edittext_style"
+        android:hint="Контактный телефон"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="20dp"
+        android:textColorHint="#99000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_city" />
+
+    <EditText
+        android:id="@+id/edit_text_city"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edittext_style"
+        android:hint="Город"
+        android:maxLength="30"
+        android:paddingLeft="20dp"
+        android:textColorHint="#99000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_otchestv" />
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edittext_style"
+        android:hint="Имя"
+        android:maxLength="30"
+        android:paddingLeft="20dp"
+        android:textColorHint="#99000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_surname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="Минимум 8 символов"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pass" />
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+        android:maxLength="20"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/edittext_style"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColorHint="#99000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+
+        android:id="@+id/text_otchestv"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_style"
+        android:hint="Отчество"
+        android:maxLength="30"
+        android:paddingLeft="20dp"
+        android:textColorHint="#99000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_surname" />
+
+    <EditText
+        android:id="@+id/text_surname"
+
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edittext_style"
+        android:hint="Фамилия"
+        android:maxLength="30"
+        android:paddingLeft="20dp"
+        android:textColorHint="#99000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_otchestv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+    <Button
+        android:id="@+id/buttonRegist"
+        style="@style/ButtonText"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="22dp"
+
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/button_sigh_in_style"
+        android:elevation="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:stateListAnimator="@null"
+        android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

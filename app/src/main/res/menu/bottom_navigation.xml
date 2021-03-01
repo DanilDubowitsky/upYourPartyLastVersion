@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/categories_nav"
+        android:title="Категории"
+        android:icon="@drawable/ic_format_align_justify_black_24dp"
+        />
+    <item
+        android:id="@+id/fav_nav"
+        android:title="Избранное"
+        android:icon="@drawable/bookmark"
+        />
+    <item
+        android:id="@+id/manager_announcement"
+        android:title="Менеджер объявлений"
+        android:icon="@drawable/plus"
+        />
+    <item
+        android:id="@+id/mess_nav"
+        android:title="Сообщения"
+        android:icon="@drawable/msg"
+        />
+    <item
+        android:id="@+id/profile_nav"
+        android:title="Редактировать профиль"
+        android:icon="@drawable/prof"
+        />
+
+    <item
+        android:id="@+id/itemExit"
+        android:title="Выход"
+        />
+
+
+
+</group>
+
+
+
+</menu>
