@@ -82,7 +82,7 @@ public class FragmentChat extends Fragment implements  View.OnClickListener, Mes
     static final int GALLERY_REQUEST = 1;
     MessagesPresenter messagesPresenter;
     String emailTo;
-    final private String urlImage = "http://178.170.220.39:8080/ads/image/";
+    final private String urlImage = "http://37.21.255.194:8000/ads/image/";
     String imageUrl;
     Uri selectedImage;
     OnFragmentInteractionListener fragmentListener;
@@ -94,7 +94,7 @@ public class FragmentChat extends Fragment implements  View.OnClickListener, Mes
         ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
         sendMsg = v.findViewById(R.id.sendMsg);
         sendMsg.setOnClickListener(this);
-        mStompClient = Stomp.over(Stomp.ConnectionProvider.OKHTTP, "ws://178.170.220.39:8080/gs-guide-websocket/websocket");
+        mStompClient = Stomp.over(Stomp.ConnectionProvider.OKHTTP, "ws://37.21.255.194:8000/gs-guide-websocket/websocket");
         mStompClient.connect();
         chatPresenter = new ChatPresenter(this,new ModelChat());
         textMessage = v.findViewById(R.id.message);

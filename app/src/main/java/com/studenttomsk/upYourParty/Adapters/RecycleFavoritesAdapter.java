@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class RecycleFavoritesAdapter extends RecyclerView.Adapter<RecycleFavoritesAdapter.RecycleViewAllAnnounceAdapter> {
     private ArrayList<SearchAnnouncementRes> recycleAnnounceItems;
     private OnItemClickListener mListener;
-    private String urlImage = "http://178.170.220.39:8080/ads/image/";
+    private String urlImage = "http://37.21.255.194:8000/ads/image/";
 
     public static class RecycleViewAllAnnounceAdapter extends RecyclerView.ViewHolder{
         ImageView imageView;

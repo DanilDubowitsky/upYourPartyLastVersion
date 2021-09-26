@@ -62,7 +62,7 @@ public class FragmentChangeAnnouncement extends Fragment implements View.OnClick
     static final int GALLERY_REQUEST = 1;
     ArrayList<ModelChangeRecycleWithImages> list;
     FloatingActionButton saveAnnouncement;
-    private String urlImage = "http://178.170.220.39:8080/ads/image/";
+    private String urlImage = "http://37.21.255.194:8000/ads/image/";
     SharedPreferences savenToken;
     EditText title, description, price, city, phone;
     private RecyclerView recyclerView;

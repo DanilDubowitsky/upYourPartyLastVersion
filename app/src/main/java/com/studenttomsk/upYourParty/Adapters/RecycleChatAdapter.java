@@ -22,7 +22,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class RecycleChatAdapter extends RecyclerView.Adapter<RecycleChatAdapter.RecycleChatHolder> {
     ArrayList<AllMessagesClass> list;
     public Context context;
-    final private String urlImage = "http://178.170.220.39:8080/ads/image/";
+    final private String urlImage = "http://37.21.255.194:8000/ads/image/";
     private onItemClickListener mListener;
     public static class RecycleChatHolder extends RecyclerView.ViewHolder{
         public TextView fioText;

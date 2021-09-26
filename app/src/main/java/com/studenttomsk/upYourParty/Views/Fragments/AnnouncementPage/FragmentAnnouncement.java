@@ -50,7 +50,7 @@ import java.util.ArrayList;
 public class FragmentAnnouncement extends Fragment implements View.OnClickListener, AnnouncementPageMethods.AnnouncePageView, AllAnnouncementsMethods.AllAnnounView, FavoritesMethods.ViewFav {
     View view;
     private ViewPager viewPager;
-    private String urlImage = "http://178.170.220.39:8080/ads/image/";
+    private String urlImage = "http://37.21.255.194:8000/ads/image/";
     private AdapterPager adapterPager;
     ArrayList<ModelPager> listImg;
     PresenterCreateRoom presenterCreateRoom;

@@ -23,7 +23,7 @@ public class RecycleReviewsAdapter extends RecyclerView.Adapter<RecycleReviewsAd
     List<AdsReviews> dataList;
     private OnItemClickListener listener;
     Context context;
-    final private String urlImage = "http://178.170.220.39:8080/ads/image/";
+    final private String urlImage = "http://37.21.255.194:8000/ads/image/";
     @NonNull
     @Override
     public RecycleReviewsHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

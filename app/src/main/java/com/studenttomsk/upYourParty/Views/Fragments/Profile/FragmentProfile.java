@@ -59,7 +59,7 @@ public class FragmentProfile extends Fragment implements View.OnClickListener, P
     ProgressDialog pd;
     String oldName, oldSurname,oldOtchestvo,oldCity,oldEmail, oldNumberPhone;
     Toast toast;
-    private String urlImage = "http://178.170.220.39:8080/ads/image/";
+    private String urlImage = "http://37.21.255.194:8000/ads/image/";
     EditText name,surname,otchestvo,email,city,phoneNumber, oldPassword, newPassword, confNewPassword;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

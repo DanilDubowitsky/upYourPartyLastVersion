@@ -55,7 +55,7 @@ public class FragmentMessages extends Fragment implements MessagesMethods.Messag
 
         messagesPresenter.postMyEmail();
 
-        mStompClient = Stomp.over(Stomp.ConnectionProvider.OKHTTP, "ws://178.170.220.39:8080/gs-guide-websocket/websocket");
+        mStompClient = Stomp.over(Stomp.ConnectionProvider.OKHTTP, "ws://37.21.255.194:8000/gs-guide-websocket/websocket");
         mStompClient.connect();
 
         setListenerMessages();
